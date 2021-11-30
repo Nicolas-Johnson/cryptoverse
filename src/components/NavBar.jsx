@@ -8,7 +8,13 @@ const NavBar = () => {
       <div className="cryptoverse_nav-container_logo">
         <img src={ Icon } alt="Logo" />
         <Link to="/">CRYPTO VERSE</Link>
-      </div>            
+      </div>
+      <div className="cryptoverse_nav-container-menu">
+        <Link to="/">Home</Link>
+        <Link to="/cryptocurrencies">Cryptocurrencies</Link>
+        <Link to="/exchanges">Exchanges</Link>
+        <Link to="/news">News</Link>        
+      </div>        
     </div>
   )
 }
