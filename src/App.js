@@ -1,20 +1,15 @@
 import React from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
-import './App.css';
-import { NavBar } from './components';
+import { BrowserRouter } from 'react-router-dom';
+import { Main, Footer, Header } from './containers';
 
 function App() {
   return (
     <div className="cryptoverse">
-      <div className="cryptoverse_navBar">
-        <NavBar />
-      </div>
-      <div className="cryptoverse_main">
-
-      </div>
-      <div className="cryptoverse_footer">
-
-      </div>
+      <BrowserRouter>
+        <Header />
+        <Main />
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
