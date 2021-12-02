@@ -1,10 +1,10 @@
 import { combineReducers } from "redux";
 
 // reducers
-  //import reducerx from './reducerX';
+import crypto from './Crypto';
 
 const rootReducer = combineReducers({
-  //reducerX,
+  crypto,
   //reducerY,
 });
 
