@@ -5,4 +5,5 @@ export { default as Exchanges } from './Exchanges';
 export { default as HomePage } from './HomePage';
 export { default as News } from './News';
 export { default as Cardstats } from './Cardstats';
+export { default as CryptoCard } from './CryptoCard';
 export { default as NotFound } from './NotFound';

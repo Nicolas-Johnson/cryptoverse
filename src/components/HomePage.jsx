@@ -1,9 +1,11 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCrypto, homePageDismount } from '../Redux/Actions/Index';
 import millify from 'millify';
 import { Link } from 'react-router-dom';
 import { Cardstats } from '.';
+import { Cryptocurrencies, News } from './index';
 
 const HomePage = () => {
   const dispatch = useDispatch();
@@ -30,10 +32,16 @@ const HomePage = () => {
         <Cardstats title="Total 24h Volume" value={millify(stats.total24hVolume)} />
         <Cardstats title="Total Markets" value={millify(stats.totalMarkets)} />
       </div>}
-      <div className="cryptoverse_main-content_homepage-headings">
+      <div className="cryptoverse_main-content_homepage-cryptoheadings">
         <h2>Top 10 Cryptocurrencies in the world</h2>
         <h3><Link to="cryptocurrencies">Show more</Link></h3>
       </div>
+      <Cryptocurrencies simplify={true} />
+      <div className="cryptoverse_main-content_homepage-newsheadings">
+        <h2>Latest Crypto news</h2>
+        <h3><Link to="news">Show more</Link></h3>
+      </div>
+      <News />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import { REQUEST_CRYPTO, RECEIVED_CRYPTO, HOME_DISMOUNT } from '../Actions/Index
 
 const INITIAL_STATE = {
   isFetcthing: false,
-  exchanges: {},
+  coins: [],
   //currencies: [],
   stats: {},
   canRender: false,
@@ -19,7 +19,7 @@ const crypto = (state = INITIAL_STATE, action) => {
     return {
       ...state,
       isFetcthing: false,
-      exchanges: action.coins.data,
+      coins: [...action.coins.data.coins],
       //currencies: [...action.coins.data.currencies],
       stats: action.coins.data.stats,
       canRender: true,
