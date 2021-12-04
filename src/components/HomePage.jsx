@@ -14,7 +14,7 @@ const HomePage = () => {
   const canRender = useSelector((state) => state.crypto.canRender);
 
   useEffect(() => {
-    dispatch(fetchCrypto('/coins'));
+    dispatch(fetchCrypto('/coins?limit=100'));
   }, []);
 
   useEffect(() => {

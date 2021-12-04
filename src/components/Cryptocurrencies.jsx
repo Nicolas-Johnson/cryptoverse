@@ -1,18 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { CryptoCard } from '.';
 
 const Cryptocurrencies = ({simplify = false}) => {
   const isFetcthing = useSelector((state) => state.crypto.isFetcthing);
-  const coins = useSelector((state) => state.crypto.coins);
-  const [currencies] = useState(simplify ? coins.slice(0, 10): coins)
+  const coins = useSelector((state) => simplify ? state.crypto.coins.slice(0, 10) : state.crypto.coins);
+  const [currencies, setCurrencies] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
+
+  useEffect(() => {
+    const filteredData = coins.filter((coin) => coin.name.toLowerCase().includes(searchQuery.toLowerCase()));
+    setCurrencies(filteredData);
+
+  }, [coins, searchQuery]);
+
   return (
     <div className="cryptoverse_main-content_cryptocurrencies">
-      {!simplify && <h2>Alguma coisa aqui da pagina</h2>}
+      {!simplify && <div className="cryptoverse_main-content_cryptocurrencies-search">
+        <input placeholder="Search Cryptocurrency" onChange={(e) => setSearchQuery(e.target.value)} />
+      </div>}
       <div className="cryptoverse_main-content_cryptocurrencies-container">
         {isFetcthing && <p>Loading...</p>}
-        {coins && currencies.map(({ id, rank, name, iconUrl, price, marketCap, change }) => (
+        {currencies && currencies.map(({ id, rank, name, iconUrl, price, marketCap, change }) => (
           <Link to={`crypto/${id}`} key={ id }>
             <CryptoCard rank={ rank } name={ name } iconUrl={ iconUrl } price={ price } marketCap={ marketCap } change={ change } />
           </Link>

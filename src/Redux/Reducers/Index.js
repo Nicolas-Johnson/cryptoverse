@@ -2,10 +2,11 @@ import { combineReducers } from "redux";
 
 // reducers
 import crypto from './Crypto';
+import news from './News';
 
 const rootReducer = combineReducers({
   crypto,
-  //reducerY,
+  news,
 });
 
 export default rootReducer;
