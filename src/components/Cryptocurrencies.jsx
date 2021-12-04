@@ -13,7 +13,7 @@ const Cryptocurrencies = ({simplify = false}) => {
     const filteredData = coins.filter((coin) => coin.name.toLowerCase().includes(searchQuery.toLowerCase()));
     setCurrencies(filteredData);
 
-  }, [coins, searchQuery]);
+  }, [searchQuery]);
 
   return (
     <div className="cryptoverse_main-content_cryptocurrencies">
@@ -22,7 +22,7 @@ const Cryptocurrencies = ({simplify = false}) => {
       </div>}
       <div className="cryptoverse_main-content_cryptocurrencies-container">
         {isFetcthing && <p>Loading...</p>}
-        {currencies && currencies.map(({ id, rank, name, iconUrl, price, marketCap, change }) => (
+        {currencies.map(({ id, rank, name, iconUrl, price, marketCap, change }) => (
           <Link to={`crypto/${id}`} key={ id }>
             <CryptoCard rank={ rank } name={ name } iconUrl={ iconUrl } price={ price } marketCap={ marketCap } change={ change } />
           </Link>

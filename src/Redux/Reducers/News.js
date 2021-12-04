@@ -16,7 +16,7 @@ const news = (state = INITIAL_STATE, action) => {
     return {
       ...state,
       isFetcthing: false,
-      news: action.news,
+      news: action.news.value,
     }
   default:
     return state;

@@ -41,7 +41,7 @@ const HomePage = () => {
         <h2>Latest Crypto news</h2>
         <h3><Link to="news">Show more</Link></h3>
       </div>
-      <News />
+      <News simplify={ true } />
     </div>
   );
 }
