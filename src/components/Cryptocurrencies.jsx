@@ -23,7 +23,7 @@ const Cryptocurrencies = ({simplify = false}) => {
       <div className="cryptoverse_main-content_cryptocurrencies-container">
         {isFetcthing && <p>Loading...</p>}
         {currencies.map(({ id, rank, name, iconUrl, price, marketCap, change }) => (
-          <Link to={`crypto/${id}`} key={ id }>
+          <Link to={`/crypto/${id}`} key={ id }>
             <CryptoCard rank={ rank } name={ name } iconUrl={ iconUrl } price={ price } marketCap={ marketCap } change={ change } />
           </Link>
         ))}

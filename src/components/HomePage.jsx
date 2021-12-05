@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom';
 import { Cardstats } from '.';
 import { Cryptocurrencies, News } from './index';
 
+// /coin/1'
+
 const HomePage = () => {
   const dispatch = useDispatch();
   const stats = useSelector((state) => state.crypto.stats);
