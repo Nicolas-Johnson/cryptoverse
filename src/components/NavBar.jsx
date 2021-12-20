@@ -7,7 +7,7 @@ const NavBar = () => {
     <div className="cryptoverse_header_navgation">
       <div className="cryptoverse_header_navgation-logo">
         <img src={ Icon } alt="Logo" />
-        <Link to="/">CRYPTO VERSE</Link>
+        <Link to="/">CRYPTOVERSE</Link>
       </div>
       <div className="cryptoverse_header_navgation-menu">
         <ul className="cryptoverse_header_navgation-menu-links">

@@ -1,0 +1,42 @@
+.cryptoverse_header_navgation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1111rem 1.6667rem;
+    background: $primary;
+    color: $background;
+
+  .cryptoverse_header_navgation-logo {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100px;
+      margin: 5px auto;
+    }
+  }
+  .cryptoverse_header_navgation-menu {
+    .cryptoverse_header_navgation-menu-links {
+      display: flex;
+      
+      li {
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cryptoverse_header_navgation {
+    .cryptoverse_header_navgation-menu {
+      .cryptoverse_header_navgation-menu-links {
+        flex-direction: column;
+        text-align: right;
+
+        li {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
