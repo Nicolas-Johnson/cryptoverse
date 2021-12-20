@@ -13,12 +13,83 @@
     display: flex;
     flex-direction: column;
     //position: relative;
-    //font-family: $font-family;
-    //font-size: $font-size;
-    //overflow-x: hidden;
+    font-family: $font-family;
+    font-size: $font-size;
+    letter-spacing: 0,5px;
   }
     
   a {
     text-decoration: none;
     color: unset;
+  }
+
+  ul, ol {
+    list-style: none;
+    text-decoration: none;
+  }
+
+  h1 {
+    font-weight: 100;
+    font-size: 5,334rem;
+    letter-spacing: -0,0834rem;
+  }
+
+  h2 {
+    font-weight: 100;
+    font-size: 3,334rem;
+    letter-spacing: -0,0278rem;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 2,6668rem;
+  }
+
+  h4 {
+    font-weight: 400;
+    font-size: 1,8889rem;
+    letter-spacing: 0,0139rem;
+  }
+
+  h5 {
+    font-weight: 400;
+    font-size: 1,3334rem;
+  }
+
+  h6 {
+    font-weight: 700;
+    font-size: 1,1111rem;
+    letter-spacing: 0,0083rem;
+  }
+
+  .subT-1 {
+    font-family: $second-font;
+    font-weight: 400;
+    font-size: 0,8889rem;
+    letter-spacing: 0,0083rem;    
+  }
+
+  .subT-2 {
+    font-family: $second-font;
+    font-weight: 600;
+    font-size: 0,7778rem;
+    letter-spacing: 0,0083rem;
+  }
+  //Mixins
+  @mixin btn {
+    font-weight: 700;
+    font-size: 0,7778rem;
+    letter-spacing: 0,0694rem;
+  }
+
+  @mixin caption {
+    font-weight: 400;
+    font-size: 0,6667rem;
+    letter-spacing: 0,0222rem;
+  }
+
+  @mixin overline {
+    font-weight: 400;
+    font-size: 0,5556rem;
+    letter-spacing: 0,0833rem;
   }

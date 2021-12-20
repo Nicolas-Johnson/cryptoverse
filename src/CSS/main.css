@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -12,9 +14,65 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0, 5px;
 }
 
 a {
   text-decoration: none;
   color: unset;
+}
+
+ul, ol {
+  list-style: none;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 5, 334rem;
+  letter-spacing: 0, 834rem;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 3, 334rem;
+  letter-spacing: 0, 278rem;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 2, 6668rem;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 1, 8889rem;
+  letter-spacing: 0, 139rem;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 1, 3334rem;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 1, 1111rem;
+  letter-spacing: 0, 83rem;
+}
+
+.subT-1 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 0, 8889rem;
+  letter-spacing: 0, 83rem;
+}
+
+.subT-2 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 0, 7778rem;
+  letter-spacing: 0, 83rem;
 }/*# sourceMappingURL=main.css.map */
