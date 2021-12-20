@@ -1,0 +1,19 @@
+.cryptoverse_footer {
+  background: $primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.1111rem 1.6667rem 0;
+  color: $background;
+  .cryptoverse_footer-navigation {
+    .cryptoverse_header_navgation-menu-links {
+      display: flex;
+
+      li {
+        margin: 0 10px 10px 10px;
+      }
+    }
+    
+  }
+}
