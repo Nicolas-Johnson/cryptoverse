@@ -9,14 +9,15 @@
 
 html {
   overflow-x: hidden;
+  font-size: 18px;
 }
 
 body {
   display: flex;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
   letter-spacing: 0.5px;
+  font-size: 1rem;
 }
 
 a {
@@ -65,9 +66,10 @@ h6 {
 
 .subT-1 {
   font-family: "Nunito", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 0.8889rem;
   letter-spacing: 0.0083rem;
+  color: #8ba000;
 }
 
 .subT-2 {
@@ -75,15 +77,31 @@ h6 {
   font-weight: 600;
   font-size: 0.7778rem;
   letter-spacing: 0.0083rem;
+  color: #8ba000;
 }
 
+@media screen and (max-width: 1190px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 940px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 860px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
 .cryptoverse_header_navgation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.1111rem 1.6667rem;
   background: #180850;
-  color: #a59393;
+  color: #e6e9f0;
 }
 .cryptoverse_header_navgation .cryptoverse_header_navgation-logo {
   display: flex;
@@ -109,6 +127,46 @@ h6 {
     margin-bottom: 8px;
   }
 }
+.cryptoverse_main-content_homepage {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  background: #e6e9f0;
+}
+.cryptoverse_main-content_homepage .cryptoverse_main-content_homepage-cardscontainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 80%;
+  justify-content: space-between;
+}
+.cryptoverse_main-content_homepage .cryptoverse_main-content_homepage-cardscontainer .cryptoverse_main-content_homepage-cardscontainer-card {
+  margin: 10px;
+}
+.cryptoverse_main-content_homepage .cryptoverse_main-content_homepage-cryptoheadings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cryptoverse_main-content_homepage .cryptoverse_main-content_homepage-cryptoheadings h4 {
+  color: #8ba000;
+}
+.cryptoverse_main-content_homepage .cryptoverse_main-content_homepage-newsheadings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cryptoverse_main-content_homepage .cryptoverse_main-content_homepage-newsheadings h4 {
+  color: #8ba000;
+}
+
+@media screen and (max-width: 450px) {
+  .cryptoverse_main-content_homepage .cryptoverse_main-content_homepage-cryptoheadings {
+    flex-direction: column;
+  }
+  .cryptoverse_main-content_homepage .cryptoverse_main-content_homepage-newsheadings {
+    flex-direction: column;
+  }
+}
 .cryptoverse_footer {
   background: #180850;
   display: flex;
@@ -116,7 +174,7 @@ h6 {
   justify-content: center;
   align-items: center;
   padding: 1.1111rem 1.6667rem 0;
-  color: #a59393;
+  color: #e6e9f0;
 }
 .cryptoverse_footer .cryptoverse_footer-navigation .cryptoverse_header_navgation-menu-links {
   display: flex;

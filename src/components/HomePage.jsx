@@ -36,12 +36,12 @@ const HomePage = () => {
       </div>}
       <div className="cryptoverse_main-content_homepage-cryptoheadings">
         <h2>Top 10 Cryptocurrencies in the world</h2>
-        <h3><Link to="cryptocurrencies">Show more</Link></h3>
+        <h4><Link to="cryptocurrencies">Show more</Link></h4>
       </div>
       <Cryptocurrencies simplify={true} />
       <div className="cryptoverse_main-content_homepage-newsheadings">
         <h2>Latest Crypto news</h2>
-        <h3><Link to="news">Show more</Link></h3>
+        <h4><Link to="news">Show more</Link></h4>
       </div>
       <News simplify={ true } />
     </div>
