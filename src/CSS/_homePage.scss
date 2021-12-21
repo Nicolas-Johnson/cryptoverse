@@ -38,6 +38,10 @@
 
 @media screen and (max-width: 450px) {
   .cryptoverse_main-content_homepage {
+    .cryptoverse_main-content_homepage-cardscontainer {
+      display: flex;
+      flex-direction: column;
+    }
     .cryptoverse_main-content_homepage-cryptoheadings {
       flex-direction: column;
     }

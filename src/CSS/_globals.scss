@@ -97,6 +97,16 @@
     letter-spacing: 0.0833rem;
   }
 
+  @mixin input {
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 8px;
+    outline: 5px solid $complementary;
+   }
+
   @media screen and (max-width: 1190px) {
     html {
       font-size: 14px;
