@@ -6,7 +6,7 @@ const CardCryptoNews = ({ name, contentUrl,  description, datePublished, provide
   return (
     <div className="cryptoverse_main-content_news-cards_card">
       <div className="cryptoverse_main-content_news-cards_card-header">
-        <h4>{ name }</h4>
+        <h5>{ name }</h5>
         <img src={ contentUrl?.thumbnail?.contentUrl ||  thumbDefault} alt="news" width="100px" />
       </div>
       <p>

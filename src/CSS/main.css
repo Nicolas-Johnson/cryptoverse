@@ -146,6 +146,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 30px 0;
 }
 .cryptoverse_main-content_homepage .cryptoverse_main-content_homepage-cryptoheadings h4 {
   color: #8ba000;
@@ -154,6 +155,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 30px 0;
 }
 .cryptoverse_main-content_homepage .cryptoverse_main-content_homepage-newsheadings h4 {
   color: #8ba000;
@@ -222,6 +224,78 @@ h6 {
   font-weight: 600;
 }
 
+.cryptoverse_main-content_news {
+  background: #d5d8df;
+}
+.cryptoverse_main-content_news .cryptoverse_main-content_news-query {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.cryptoverse_main-content_news .cryptoverse_main-content_news-query select {
+  width: 90%;
+  height: 40px;
+  margin: auto;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 8px;
+  outline: 5px solid #8ba000;
+}
+.cryptoverse_main-content_news .cryptoverse_main-content_news-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  width: 100%;
+}
+.cryptoverse_main-content_news .cryptoverse_main-content_news-cards a .cryptoverse_main-content_news-cards_card {
+  padding: 10px;
+  margin: 10px;
+  background: #FFF;
+  align-items: stretch;
+}
+.cryptoverse_main-content_news .cryptoverse_main-content_news-cards a .cryptoverse_main-content_news-cards_card .cryptoverse_main-content_news-cards_card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cryptoverse_main-content_news .cryptoverse_main-content_news-cards a .cryptoverse_main-content_news-cards_card .cryptoverse_main-content_news-cards_card-header img {
+  flex: 1;
+  max-height: 100px;
+  max-width: 100px;
+}
+.cryptoverse_main-content_news .cryptoverse_main-content_news-cards a .cryptoverse_main-content_news-cards_card .cryptoverse_main-content_news-cards_card-header h4 {
+  flex: 4;
+}
+.cryptoverse_main-content_news .cryptoverse_main-content_news-cards a .cryptoverse_main-content_news-cards_card p {
+  margin: 15px 0;
+}
+.cryptoverse_main-content_news .cryptoverse_main-content_news-cards a .cryptoverse_main-content_news-cards_card .cryptoverse_main-content_news-cards_card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+}
+.cryptoverse_main-content_news .cryptoverse_main-content_news-cards a .cryptoverse_main-content_news-cards_card .cryptoverse_main-content_news-cards_card-footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cryptoverse_main-content_news .cryptoverse_main-content_news-cards a .cryptoverse_main-content_news-cards_card .cryptoverse_main-content_news-cards_card-footer div img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+/*
+.cryptoverse_main-content_news {
+    .cryptoverse_main-content_news-query {}
+    .cryptoverse_main-content_news-cards {
+      a {
+        .cryptoverse_main-content_news-cards_card {
+          .cryptoverse_main-content_news-cards_card-header {}
+          .cryptoverse_main-content_news-cards_card-footer {}
+        }
+      }
+    }
+  }
+*/
 .cryptoverse_footer {
   background: #180850;
   display: flex;
