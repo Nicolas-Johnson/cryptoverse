@@ -296,6 +296,72 @@ h6 {
     }
   }
 */
+.cryptoverse_main-content_exchanges {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #d5d8df;
+}
+.cryptoverse_main-content_exchanges .cryptoverse_main-content_exchanges-headers {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.cryptoverse_main-content_exchanges .cryptoverse_main-content_exchanges-headers p {
+  font-size: 1rem;
+  margin: 20px 0;
+}
+.cryptoverse_main-content_exchanges .cryptoverse_main-content_exchanges-container {
+  width: 90%;
+  margin-bottom: 50px;
+}
+.cryptoverse_main-content_exchanges .cryptoverse_main-content_exchanges-container .cryptoverse_main-content_exchanges-container_card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.cryptoverse_main-content_exchanges .cryptoverse_main-content_exchanges-container .cryptoverse_main-content_exchanges-container_card .cryptoverse_main-content_exchanges-container_card-status {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  background: #FFF;
+  border: 2px solid #8ba000;
+  min-height: 80px;
+}
+.cryptoverse_main-content_exchanges .cryptoverse_main-content_exchanges-container .cryptoverse_main-content_exchanges-container_card .cryptoverse_main-content_exchanges-container_card-status p {
+  flex: 1;
+  justify-content: center;
+  align-self: center;
+}
+.cryptoverse_main-content_exchanges .cryptoverse_main-content_exchanges-container .cryptoverse_main-content_exchanges-container_card .cryptoverse_main-content_exchanges-container_card-status p span:first-child {
+  color: #8ba000;
+  font-weight: 600;
+}
+.cryptoverse_main-content_exchanges .cryptoverse_main-content_exchanges-container .cryptoverse_main-content_exchanges-container_card .cryptoverse_main-content_exchanges-container_card-status p:first-child {
+  flex: 0.8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 70px;
+}
+.cryptoverse_main-content_exchanges .cryptoverse_main-content_exchanges-container .cryptoverse_main-content_exchanges-container_card .cryptoverse_main-content_exchanges-container_card-status p:nth-child(4n) {
+  position: absolute;
+  margin-left: 100px;
+  right: 5px;
+}
+/*
+.cryptoverse_main-content_exchanges {
+  .cryptoverse_main-content_exchanges-headers {}
+  .cryptoverse_main-content_exchanges-container {
+    .cryptoverse_main-content_exchanges-container_card {
+        .cryptoverse_main-content_exchanges-container_card-status {}
+        .cryptoverse_main-content_exchanges-container_card-description {}
+    }
+  }
+}
+*/
 .cryptoverse_footer {
   background: #180850;
   display: flex;

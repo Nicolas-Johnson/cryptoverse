@@ -1,0 +1,78 @@
+.cryptoverse_main-content_exchanges {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: $background;
+
+  .cryptoverse_main-content_exchanges-headers {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    
+    p {
+      font-size: 1rem;
+      //flex: 1;
+      margin: 20px 0;
+    }
+  }
+  .cryptoverse_main-content_exchanges-container {
+    width: 90%;
+    margin-bottom: 50px;
+    .cryptoverse_main-content_exchanges-container_card {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .cryptoverse_main-content_exchanges-container_card-status {
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+        background: #FFF;
+        border: 2px solid $complementary;
+        min-height: 80px;
+
+        p {
+          flex: 1;
+          justify-content: center;
+          align-self: center;
+
+          span {
+            &:first-child {
+              color: $complementary;
+              font-weight: 600;
+            }
+          }
+
+          &:first-child {
+            flex: 0.8;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 70px;
+          }
+
+          &:nth-child(4n) {
+            position: absolute;
+            margin-left: 100px;
+            right: 5px;
+          }
+        }
+      }
+      .cryptoverse_main-content_exchanges-container_card-description {
+      }
+    }
+  }
+}
+
+/*
+.cryptoverse_main-content_exchanges {
+  .cryptoverse_main-content_exchanges-headers {}
+  .cryptoverse_main-content_exchanges-container {
+    .cryptoverse_main-content_exchanges-container_card {
+        .cryptoverse_main-content_exchanges-container_card-status {}
+        .cryptoverse_main-content_exchanges-container_card-description {}
+    }
+  }
+}
+*/
