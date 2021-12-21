@@ -9,11 +9,14 @@ export const REQUEST_NEWS = 'REQUEST_NEWS';
 export const RECEIVED_COIN = 'RECEIVED_COIN';
 export const RECEIVED_HISTORY = 'RECEIVED_HISTORY';
 export const RECEIVED_NEWS = 'RECEIVED_NEWS';
+export const REQUEST_EXCHANGES = 'REQUEST_EXCHANGES';
+export const RECEIVED_EXCHANGES = 'RECEIVED_EXCHANGES';
 
 // Actions
 
 const requestCrypto = () => ({ type: REQUEST_CRYPTO });
 const requestNews = () => ({ type: REQUEST_NEWS });
+const requestExchanges = () => ({ type: REQUEST_EXCHANGES });
 export const homePageDismount = () => ({ type: HOME_DISMOUNT });
 
 const receivedCrypto = (coins) => ({
@@ -34,6 +37,11 @@ const receivedCoinHistory = (history) => ({
 const receivedNews = (news) => ({
   type: RECEIVED_NEWS,
   news,
+});
+
+const receivedExchanges = (exchanges) => ({
+  type: RECEIVED_EXCHANGES,
+  exchanges,
 });
 
 export function fetchCrypto(endpoint) {
@@ -105,6 +113,22 @@ export function fetchNews(newsCategory, count) {
     .then((response) => {
       return dispatch(receivedNews(response));
     })
+    .catch((err) => console.error(err));
+  }
+}
+
+export function fetchExchanges() {
+  return (dispatch) => {
+    dispatch(requestExchanges());
+    return fetch("https://coinranking1.p.rapidapi.com/exchanges", {
+      "method": "GET",
+      "headers": {
+        "x-rapidapi-host": "coinranking1.p.rapidapi.com",
+        "x-rapidapi-key": "328d5e08e5msh3379c9663d7b5d2p1bcd16jsn62cbd9f5ee6a"
+      }
+    })
+    .then((response) => response.json())
+    .then((response) => dispatch(receivedExchanges(response)))
     .catch((err) => console.error(err));
   }
 }

@@ -8,4 +8,5 @@ export { default as Cardstats } from './Cardstats';
 export { default as CryptoCard } from './CryptoCard';
 export { default as CardCryptoNews } from './CardCryptoNews';
 export { default as LineChart } from './LineChart';
+export { default as TableRow } from './TableRow';
 export { default as NotFound } from './NotFound';

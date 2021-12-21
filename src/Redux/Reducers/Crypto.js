@@ -1,18 +1,18 @@
-import { REQUEST_CRYPTO, RECEIVED_CRYPTO, HOME_DISMOUNT, RECEIVED_COIN, RECEIVED_HISTORY } from '../Actions/Index';
+import { REQUEST_CRYPTO, RECEIVED_CRYPTO, HOME_DISMOUNT, RECEIVED_COIN, RECEIVED_HISTORY, REQUEST_EXCHANGES, RECEIVED_EXCHANGES } from '../Actions/Index';
 
 const INITIAL_STATE = {
   isFetcthing: false,
   coins: [],
   coin: '',
-  //currencies: [],
   stats: {},
   canRender: false,
   history: '',
+  exchanges: [],
 };
 
 const crypto = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-  case REQUEST_CRYPTO:
+  case REQUEST_CRYPTO || REQUEST_EXCHANGES:
     return {
       ...state,
       isFetcthing: true,
@@ -40,9 +40,14 @@ const crypto = (state = INITIAL_STATE, action) => {
   case RECEIVED_HISTORY:
     return {
       ...state,
-
       isFetcthing: false,
       history: action.history.data,
+    }
+  case RECEIVED_EXCHANGES:
+    return {
+      ...state,
+      isFetcthing: false,
+      exchanges: action.exchanges.data.exchanges,
     }
   default:
     return state;
