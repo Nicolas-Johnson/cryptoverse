@@ -23,8 +23,8 @@ const LineChart = ({ coinHistory, currentPrice, coinName}) => {
         id: 1,
         label: 'Price in USD',
         data: coinPrice,
-        backgroundColor: '#0071bd',
-        borderColor: '#0071bd',
+        backgroundColor: '#8ba000',
+        borderColor: '#8ba000',
         fill: false,
       },
     ],
@@ -32,10 +32,10 @@ const LineChart = ({ coinHistory, currentPrice, coinName}) => {
   
   return (
     <div>
-    <h2>{ coinName } Price Chart</h2>
-    <div>
-      <h5>{ coinHistory && coinHistory.change } %</h5>
-      <h5>Current { coinName } Price: $ { currentPrice }</h5>
+    <h3>{ coinName } Price Chart</h3>
+    <div className="jstcontainer">
+      <h5 className="subT-1">{ coinHistory && coinHistory.change } %</h5>
+      <h5 className="subT-1">Current { coinName } Price: $ { currentPrice }</h5>
     </div>
     <Line datasetIdKey='id' data={data} />
     </div>

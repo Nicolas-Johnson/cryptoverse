@@ -78,6 +78,11 @@
     letter-spacing: 0.0083rem;
     color: $complementary;
   }
+
+  .jstcontainer {
+    display: flex;
+    justify-content: space-between;
+  }
   //Mixins
   @mixin btn {
     font-weight: 700;

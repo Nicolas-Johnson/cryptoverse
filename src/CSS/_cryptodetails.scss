@@ -1,0 +1,154 @@
+.cryptoverse_main-content_cryptodetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  .cryptoverse_main-content_cryptodetails-headers {
+    text-align: center;
+  }
+
+  form {
+    max-width: 300px;
+    label {
+      select {
+        @include input;
+       }
+    }
+  }
+
+  .cryptoverse_main-content_cryptodetails-stats {
+    width: 90%;
+    margin: 0 auto;
+
+    .cryptoverse_main-content_cryptodetails-stats-statistics {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+      .cryptoverse_main-content_cryptodetails-stats-statistics-headings {
+        flex: 1;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        
+        h3 {
+          text-align: center;
+        }
+        
+        h5 {
+          text-align: center;
+        }
+        .cryptoverse_main-content_cryptodetails-stats-statistics-names {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 10px;
+          margin-top: 20px;
+
+          p {
+            &:nth-child(2) {
+              color: $complementary;
+            }
+          }
+        }
+
+      }
+      .cryptoverse_main-content_cryptodetails-stats-otherstatistics-headings {
+        flex: 1;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        
+        h3 {
+          text-align: center;
+        }
+        
+        h5 {
+          text-align: center;
+        }
+
+        .cryptoverse_main-content_cryptodetails-stats-otherstatistics-names {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 10px;
+          margin-top: 20px;
+
+          p {
+            &:nth-child(2) {
+              color: $complementary;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cryptoverse_main-content_cryptodetails-descrption_links {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+
+    .cryptoverse_main-content_cryptodetails-descrption_links-desc {
+      flex: 1;
+      padding: 10px;
+
+      h3 {
+        font-weight: 600;
+        &:first-child {
+          color: $complementary;
+        }
+
+        &:not(:first-child) {
+          font-size: 1.5rem;
+        }
+      }
+    } //h3, div
+    .cryptoverse_main-content_cryptodetails-descrption_links-links {
+      flex: 1;
+      padding: 10px;
+      text-align: center;
+
+      h3 {
+        color: $complementary;
+        font-weight: 600;
+      }
+
+      div {
+        display: flex;
+        justify-content: space-between;
+
+        h5 {
+          font-weight: 600;
+          margin-top: 10px;
+        }
+
+        a {
+          color: $complementary;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .cryptoverse_main-content_cryptodetails {
+    .cryptoverse_main-content_cryptodetails-headers {}
+
+  
+    .cryptoverse_main-content_cryptodetails-stats {
+      .cryptoverse_main-content_cryptodetails-stats-statistics {
+        flex-direction: column;
+        .cryptoverse_main-content_cryptodetails-stats-statistics-headings {
+          .cryptoverse_main-content_cryptodetails-stats-statistics-names {}
+        }
+        .cryptoverse_main-content_cryptodetails-stats-otherstatistics-headings {
+          .cryptoverse_main-content_cryptodetails-stats-otherstatistics-names {}
+        }
+      }
+    }
+  
+    .cryptoverse_main-content_cryptodetails-descrption_links {
+      flex-direction: column;
+      .cryptoverse_main-content_cryptodetails-descrption_links-desc {} //h3, div
+      .cryptoverse_main-content_cryptodetails-descrption_links-links {} //h3, div(h5,a)}
+    }
+  }
+}

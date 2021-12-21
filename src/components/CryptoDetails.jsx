@@ -47,8 +47,8 @@ const CryptoDetails = () => {
   return (
     <div className="cryptoverse_main-content_cryptodetails">
      <div className="cryptoverse_main-content_cryptodetails-headers">
-       <h2>{coin?.name} ({coin?.slug}) Price</h2>
-       <p>{ coin?.name } Live price in us dollars. View value statistics, market cap and supply.</p>
+       <h3>{coin?.name} ({coin?.slug}) Price</h3>
+       <p className="subT-1">{ coin?.name } Live price in us dollars. View value statistics, market cap and supply.</p>
      </div>
      <form>
        <label>
@@ -62,30 +62,32 @@ const CryptoDetails = () => {
       <div className="cryptoverse_main-content_cryptodetails-stats-statistics">
         <div className="cryptoverse_main-content_cryptodetails-stats-statistics-headings">
           <h3>{ coin?.name } Value Statistics.</h3>
-          <p>An overview showing the stats of { coin?.name }</p>
-        </div>
-        {stats.map(({ title, icon, value }) => (
-          <div key={ title } lassName="cryptoverse_main-content_cryptodetails-stats-statistics-names">
+          <h5 className="subT-1">An overview showing the stats of { coin?.name }</h5>
+          {stats.map(({ title, icon, value }) => (
+          <div key={ title } className="cryptoverse_main-content_cryptodetails-stats-statistics-names">
               <div><p>{ icon } { title }</p></div>
               <p>{ value }</p>
           </div>
         ))}
+        </div>
         <div className="cryptoverse_main-content_cryptodetails-stats-otherstatistics-headings">
           <h3>Other Statistics.</h3>
-          <p>An overview showing the stats of all Cryptocurrencies</p>
-        </div>
-        {genericStats.map(({ title, icon, value }) => (
-          <div lassName="cryptoverse_main-content_cryptodetails-stats-otherstatistics-names">
+          <h5 className="subT-1">An overview showing the stats of all Cryptocurrencies</h5>
+          {genericStats.map(({ title, icon, value }) => (
+          <div className="cryptoverse_main-content_cryptodetails-stats-otherstatistics-names">
               <div><p>{ icon } { title }</p></div>
               <p>{ value }</p>
           </div>
         ))}
+        </div>
       </div>
      </div>
      <div className="cryptoverse_main-content_cryptodetails-descrption_links">
        <div className="cryptoverse_main-content_cryptodetails-descrption_links-desc">
          <h3 className="top_h">What is { coin?.name }</h3>
-         {coin && HTMLReactParser(coin?.description)}
+         <div>
+           {coin && HTMLReactParser(coin?.description)}
+         </div>
        </div>
        <div className="cryptoverse_main-content_cryptodetails-descrption_links-links">
          <h3>{ coin?.name} Links</h3>
