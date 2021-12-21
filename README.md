@@ -4,7 +4,7 @@
 ## About The Project
 
 This project developed by me is inspired by the Crypto Verse app created by [JavaScript Master](https://www.youtube.com/watch?v=9DDX3US3kss&t=25s) on youtube, I used the video only as a wireframe.
-All code in this repository is my authority.
+All code in this repository is my authorship.
 ### Built With
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
