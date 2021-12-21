@@ -222,22 +222,6 @@ h6 {
   font-weight: 600;
 }
 
-/*
-.cryptoverse_main-content_cryptocurrencies {
-
-  .cryptoverse_main-content_cryptocurrencies-search {}
-
-  .cryptoverse_main-content_cryptocurrencies-container {
-
-      .cryptoverse_main-content_cryptocurrencies-container-card {
-
-        .cryptoverse_main-content_cryptocurrencies-container-card-header {}
-
-        .cryptoverse_main-content_cryptocurrencies-container-card-infos {}
-    }
-  }
-}
-*/
 .cryptoverse_footer {
   background: #180850;
   display: flex;
